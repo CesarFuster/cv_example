@@ -46,7 +46,10 @@
   <div class='column is-two-thirds preview card'>
     <div id="cv-preview" class="card-content">
       <h3 class="center title name">{{ user.name }}</h3>
-      <p class="center subtitle"><b v-if="user.phone != null">Telefone de contato:</b> {{ user.phone }}    <b v-if="user.email != null">Email:</b> {{ user.email }}    <b v-if="user.gender != null">Sexo:</b> {{ user.gender }}</p>
+      <p class="center subtitle"></p>
+      <p><b v-if="user.phone != null">Telefone de contato:</b> {{ user.phone }}</p>
+      <p><b v-if="user.email != null">Email:</b> {{ user.email }}</p>
+      <p><b v-if="user.gender != null">Sexo:</b> {{ user.gender }}</p>
 
       <div class="description">
         <p class="subtitle" v-if="user.description != null">Descrição</p>
